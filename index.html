@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <title>Reto 1</title>
+  </head>
+  <body>
+    <div id="alerta">
+
+    </div>
+    <div class="display">
+      <div class="contenedorInput">
+        <h6>¡Puede usar hasta emojis!</h6>
+        <textarea
+          type="text"
+          id="dato"
+          placeholder="Escribe el texto..."
+        ></textarea>
+      </div>
+      <div class="botones">
+        <button onclick="onclickInputEncript()">Encriptar</button>
+        <button onclick="onclickInputDencript()">Desencriptar</button>
+      </div>
+      <div class="contenedorResult">
+        <div>
+          <h4>Tu respuesta aqui:</h4>
+          <br />
+          <button id="copy" onclick="onclickCopy()">Copiar</button>
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scr/myscript.js"></script>
+</html>

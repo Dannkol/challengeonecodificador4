@@ -1,0 +1,167 @@
+* {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.display {
+  display: flex;
+  font-size: 22px;
+  height: 100%;
+  width: 100%;
+}
+
+.contenedorInput {
+  background-color: #ebe4d8;
+  padding: 10px;
+  width: 60%;
+  height: 95vh;
+  background: #d8dfe8;
+
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.contenedorResult {
+  background-color: #0a3871;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 40%;
+  height: 95vh;
+  color: #d8dfe8;
+}
+
+textarea {
+  font-size: 28px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 80vh;
+}
+textarea:focus {
+  outline: none;
+}
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.botones button:nth-child(1) {
+  width: 328px;
+  height: 67px;
+
+  background: #0a3871;
+  border-radius: 24px;
+  color: #f1f1f1;
+  font-size: 28px;
+}
+
+.botones button:nth-child(2) {
+  width: 328px;
+  height: 67px;
+
+  background: #d8dfe8;
+
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  font-size: 28px;
+}
+
+#copy {
+  float: right;
+  width: 100%;
+  height: 37px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #cfdafe;
+  outline: 1px solid slategrey;
+}
+
+
+
+
+.alert {
+  padding: 20px;
+  background-color: #0055ff;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
+
+@media (max-width: 800px) {
+  .display {
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+
+  .contenedorInput,
+  .contenedorResult {
+    width: 100%;
+    height: 38vh;
+  }
+
+  .contenedorResult {
+    margin-left: 10px;
+  }
+
+  .contenedorInput {
+    margin-right: 10px;
+  }
+
+  .botones {
+    width: 100%;
+  }
+  body {
+    overflow: auto;
+  }
+  button {
+    width: 228px;
+    height: 67px;
+  }
+}
